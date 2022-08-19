@@ -1,5 +1,6 @@
 body{
-  background-color: #b53d2f
+  background-color: #b53d2f;
+  padding-bottom: 3em;
 }
 
 header{
@@ -81,6 +82,13 @@ textarea{
 }
 
 footer{
+  text-align: center;
   background-color: #7a241a;
-  padding: 5px 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.badge{
+  height: 200px;
 }
