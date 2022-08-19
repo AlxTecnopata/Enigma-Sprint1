@@ -88,5 +88,6 @@ footer{
 }
 
 .badge{
-  height: 200px;
+  padding: 5px;
+  height: 250px;
 }
