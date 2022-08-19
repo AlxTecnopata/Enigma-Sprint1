@@ -8,7 +8,7 @@
   </head>
 
   <body>
-
+    <script src="script.js"></script>
     <header>
       <div class="caja">
         <h1>
@@ -24,6 +24,11 @@
 
       </div>
     </header>
+<a href="otro.html">otro</a>
+
+
+
+
 
     <main>
       <form action="index.html" method="post">
@@ -33,22 +38,13 @@
         <textarea readonly id="screen" rows="7" cols="70" input="false" placeholder="Ningun mensaje fue encontrado"></textarea>
         <p> &#9432; Sólo letras minúsculas y sin acentos</p>
 
+        <button type="button" id="encriptar" onclick="cript()" class="enviar">Encriptar</button>
+        <button type="button" id="desencriptar" onclick="cript()" class="enviar">Desencriptar</button>
+        <button type="button" id="encriptar" onclick="cript()" class="enviar">Copiar</button>
       </form>
 
-      <div class="buttons">
-        <form class="" action="index.html" method="post">
-          <button type="button" id="encriptar" onclick="cript()" class="enviar">Encriptar</button>
-          <button type="button" id="desencriptar" onclick="cript()" class="enviar">Desencriptar</button>
-          <button type="button" id="copiar" onclick="cript()" class="enviar">Copiar</button>
-        </form>
-
-      </div>
-
-
-
-
-
     </main>
+
     <footer>
       <p>Alejandro Cortez Sánchez</p>
             <br><br>
@@ -56,6 +52,6 @@
       <label>Fig 1. Máquina ENIGMA</label>
 
     </footer>
-    <script src="script2.js"></script>
+
   </body>
 </html>

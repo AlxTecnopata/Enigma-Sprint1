@@ -1,49 +1,51 @@
-const textInput = document.querySelector("#box")
+const input = document.querySelector("#box")
+const msg = document.querySelector("#screen")
 
-function cript() {
-  var textenc = textInput.value
-  var textproc = textenc.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-  textproc = textproc.toLowerCase()
-    .replaceAll("e", "enter")
-    .replaceAll("i", "imes")
-    .replaceAll("a", "ai")
-    .replaceAll("o", "ober")
-    .replaceAll("u", "ufat");
-
-    if (textenc == "") {
-    console.log("Ingrese el texto aquí");
-    } else {
-    document.querySelector("#screen").innerHTML = textproc;
-
-  };
+function cripting(string){
+  let matrix = [["e","enter"],["a","ai"],["i","imes"],["o","ober"],["u","ufat"]];
+  encripted = encripted.toLowerCase();
+  for (let i = 0; i < matrix.length; i++)
+    if (encripted.includes(matrix[i,0])){
+      encripted = encripted.replaceAll(matrix[i,0],matrix[i,1]);
+    };
+  return encripted
 }
 
-// function desencriptar() {
-//   var textModif = textInput.value
-//   var newText = textModif.toLowerCase()
-//     .replaceAll("enter", "e")
-//     .replaceAll("imes", "i")
-//     .replaceAll("ai", "a")
-//     .replaceAll("ober", "o")
-//     .replaceAll("ufat", "u");
-//
-//   if (textModif === "") {
-//     console.log("escribe algo")
-//   } else {
-//     document.querySelector("#textDesencripted").innerHTML = newText;
-//     console.log(newText);
-//   }
-// }
-//
-// function copy(){
-//   var textArea = document.getElementById("textDesencripted");
-//   var copyText = textArea.innerHTML;
-//   navigator.clipboard.writeText(copyText);
-//
-//   let notify = document.getElementById("popCopy");
-//   notify.innerHTML = "Copiado!";
-//   notify.style.display = "block";
-//   setTimeout(function() {
-//     notify.style.display = "none";
-//   }, 3000);
-// }
+function cript(){
+  const tocript = cripting(input.value)
+  msg.value = tocript;
+  msg.style.backgroundImg = "none";
+  input.value = ""
+}
+
+function copia(){
+  msg.select();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  // var textenc = input.value
+  // var textproc = textenc.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  // textproc = textproc.toLowerCase()
+
+    // .replaceAll("e", "enter")
+    // .replaceAll("i", "imes")
+    // .replaceAll("a", "ai")
+    // .replaceAll("o", "ober")
+    // .replaceAll("u", "ufat");
+
+    // La letra "e" es convertida para "enter"
+    // La letra "i" es convertida para "imes"
+    // La letra "a" es convertida para "ai"
+    // La letra "o" es convertida para "ober"
+    // La letra "u" es convertida para "ufat"
