@@ -1,0 +1,109 @@
+body{
+    background-color: #b53d2f;
+}
+
+header{
+  background-color: #7a241a;
+  padding: 10px 0;
+}
+
+.caja{
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  color: #ffdb7b;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+main{
+  width: 940px;
+  margin: 0 auto;
+  background-color: #b53d2f;
+}
+
+form{
+  position: center;
+  margin: 40px;
+}
+
+/* form textarea{
+  display: inline;
+  font-size: 20px;
+  margin: 0 0 10px;.
+  width: 30%;
+} */
+textarea{
+  border: 0px #b53d2f solid;
+  background-color: #ffba5f;
+  border-radius: 5px;
+  width: 40%;
+  height: 300px;
+}
+
+#box{
+  margin: 0 8% 0 0;
+}
+
+#screen{
+  margin: 0 0 0 8%;
+}
+
+.buttons{
+    position: center;
+}
+
+.enviar{
+  margin-top: 20px;
+  width: 30%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #ff8d3d;
+  border: none;
+  border-radius: 5px;
+  /* transition: 0.5s background;
+  transition: 0.5s transform; */
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.enviar:hover{
+  background: #f5622c;
+}
+
+footer{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffdb7b;
+  background-color: #7a241a;
+  padding: 30px;
+  margin: 0 0 0;
+}
+
+label{
+  color: white;
+  font-size: 15px;
+}

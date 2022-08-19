@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="caja">
+        <h1>
+          <img src="Logo.png" alt="">
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="https://github.com/AlxTecnopata"><img height="30px" src="gh.png" alt=""> AlxTecnopata<a/></li>
+            <li><a href="https://www.linkedin.com/in/fis-acortezs/"><img height="30px" src="li.png" alt=""> LinkedIn</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main>
+      <form action="index.html" method="post">
+
+
+        <textarea id="box" rows="7" cols="70" autofocus placeholder="Ingrese el texto aquí"></textarea>
+        <textarea readonly id="screen" rows="7" cols="70" input="false" placeholder="Ningun mensaje fue encontrado"></textarea>
+        <p> &#9432; Sólo letras minúsculas y sin acentos</p>
+
+      </form>
+
+      <div class="buttons">
+        <form class="" action="index.html" method="post">
+          <button type="button" id="encriptar" onclick="cript()" class="enviar">Encriptar</button>
+          <button type="button" id="desencriptar" onclick="cript()" class="enviar">Desencriptar</button>
+          <button type="button" id="copiar" onclick="cript()" class="enviar">Copiar</button>
+        </form>
+
+      </div>
+
+
+
+
+
+    </main>
+    <footer>
+      <p>Alejandro Cortez Sánchez</p>
+            <br><br>
+      <img src="enigma.jpg" alt="Máquina ENIGMA"><br>
+      <label>Fig 1. Máquina ENIGMA</label>
+
+    </footer>
+    <script src="script2.js"></script>
+  </body>
+</html>
