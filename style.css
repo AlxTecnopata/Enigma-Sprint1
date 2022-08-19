@@ -21,12 +21,14 @@ nav{
 
 nav li{
   display: inline;
+  color: #ffdb7b;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration:none;
 }
 
 nav a{
   color: #ffdb7b;
-  font-weight: bold;
-  font-size: 22px;
   text-decoration:none;
 }
 
@@ -88,6 +90,6 @@ footer{
 }
 
 .badge{
-  padding: 5px;
-  height: 250px;
+
+  height: 30px;
 }
